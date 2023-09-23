@@ -7,7 +7,7 @@ import { environment } from 'src/environments/environment'
 @Injectable({ providedIn: 'root' })
 export class FootBallService {
   private apiKey = '6440392d5e93461c956f2cebb78a0767'; 
-  private apiUrl = environment.apiFootballUrl;
+  private apiUrl = 'https://v3.football.api-sports.io/';
   lastgames: number = 10;
   private idTeams: number = 40;
   currentYear: Date | number;
